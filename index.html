@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slider-toggle">
+        <input type="radio" name="view" id="bullish" checked />
+        <label for="bullish">Bullish</label>
+
+        <input type="radio" name="view" id="bearish" />
+        <label for="bearish">Bearish</label>
+
+        <input type="radio" name="view" id="rangebound" />
+        <label for="rangebound">Rangebound</label>
+
+        <input type="radio" name="view" id="volatile" />
+        <label for="volatile">Volatile</label>
+      </div>
+
+      <!-- DateDropdown -->
+      <div class="dropdown">
+        <div id="selected-date" class="selected-date">
+          <!-- Date Rendered Here -->
+        </div>
+        <div id="date-cards" class="date-cards hidden">
+          <!-- Date cards will be rendered here -->
+        </div>
+      </div>
+
+      <!-- Strategy Cards -->
+      <div id="strategy-cards">
+        <!-- Strategy cards will be rendered here -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden">
+        <!-- Rendered from script -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
